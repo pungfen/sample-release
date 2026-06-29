@@ -3,7 +3,8 @@
   "version": "0.0.2",
   "main": "./dist/index.js",
   "scripts": {
-    "build": "tsc -p tsconfig.lib.json",
+    "build": "tsc -p tsconfig.lib.json --declaration",
+    "commit": "git-cz",
     "lint": "eslint"
   },
   "author": {
@@ -39,6 +40,11 @@
   "simple-git-hooks": {
     "pre-commit": "pnpm exec lint-staged",
     "commit-msg": "pnpm exec commitlint --edit $1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
   },
   "lint-staged": {
     "**/*.{ts,js,mjs,cjs}": "eslint --fix"

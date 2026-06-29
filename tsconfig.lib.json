@@ -11,7 +11,6 @@
         "strict": true,
         "types": [],
 
-        "declaration": true,
         "rootDir": "src",
         "outDir": "dist"
     }
