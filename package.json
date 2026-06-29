@@ -5,7 +5,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.lib.json --declaration",
     "commit": "git-cz",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "vitest run"
   },
   "author": {
     "name": "pungfen",
@@ -30,7 +31,8 @@
     "lint-staged": "^17.0.8",
     "simple-git-hooks": "^2.13.1",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.62.0"
+    "typescript-eslint": "^8.62.0",
+    "vitest": "^4.1.9"
   },
   "commitlint": {
     "extends": [
