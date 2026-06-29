@@ -35,11 +35,11 @@
     "extends": ["@commitlint/config-conventional"]
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpx lint-staged",
-    "commit-msg": "pnpx commitlint --edit $1"
+    "pre-commit": "lint-staged",
+    "commit-msg": "commitlint --edit $1"
   },
   "lint-staged": {
-    "*.{ts,js,mjs,cjs}": "eslint --fix"
+    "**/*.{ts,js,mjs,cjs}": "eslint --fix"
   },
   "files": ["dist", "package.json"]
 }
