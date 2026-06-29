@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/node.tsbuildinfo",
+
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "strict": true,
+
+    "types": [],
+
+    "skipLibCheck": true,
+    "isolatedModules": true
+  },
+  "include": ["eslint.config.ts"]
+}

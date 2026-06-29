@@ -1,0 +1,35 @@
+{
+  "name": "@sample/release",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.lib.json",
+    "lint": "eslint"
+  },
+  "author": {
+    "name": "pungfen",
+    "email": "fp94214@gmail.com"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.9.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "@changesets/cli": "^2.31.0",
+    "@commitlint/cli": "^21.1.0",
+    "@commitlint/config-conventional": "^21.1.0",
+    "@commitlint/cz-commitlint": "^21.1.0",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "eslint": "^10.6.0",
+    "eslint-plugin-perfectionist": "^5.9.1",
+    "lint-staged": "^17.0.8",
+    "simple-git-hooks": "^2.13.1",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.62.0"
+  },
+  "files": ["dist", "package.json"]
+}

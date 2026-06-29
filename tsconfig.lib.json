@@ -1,0 +1,17 @@
+{
+    "include": [
+        "src"
+    ],
+    "compilerOptions": {
+        "tsBuildInfoFile": "./node_modules/.tmp/lib.tsbuildinfo",
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "target": "ESNext",
+        "skipLibCheck": true,
+        "types": [],
+
+        "declaration": true,
+        "rootDir": ".",
+        "outDir": "dist"
+    }
+}
