@@ -52,5 +52,6 @@
   "files": [
     "dist",
     "package.json"
-  ]
+  ],
+  "packageManager": "pnpm@11.6.0"
 }
