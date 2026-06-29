@@ -11,7 +11,7 @@
         "types": [],
 
         "declaration": true,
-        "rootDir": ".",
+        "rootDir": "src",
         "outDir": "dist"
     }
 }
