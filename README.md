@@ -44,6 +44,17 @@ git checkout dev
 git merge main
 ```
 
+### 什么情况需要 changeset
+
+| 需要 `pnpm changeset` | 不需要 |
+|----------------------|--------|
+| 新增/修改功能（feat） | 文档改动（README 等） |
+| 修 bug（fix） | 配置调整（ESLint、tsconfig 等） |
+| 破坏性变更 | 依赖升级 |
+| 影响包使用者的改动 | 纯注释、代码格式化 |
+
+不需要发版的改动直接 `pnpm commit` 即可，跳过 `pnpm changeset`。合到 main 时如果没有待消费的 changeset，`pnpm changeset version` 不会误升版本号，安全无害。
+
 ---
 
 ## Commit 规范
